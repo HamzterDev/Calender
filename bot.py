@@ -13,7 +13,7 @@ from googleapiclient.discovery import build
 # CONFIG (ใส่ตรงนี้เลย)
 # ======================
 
-BOT_TOKEN = "PUT_YOUR_TELEGRAM_BOT_TOKEN_HERE"
+BOT_TOKEN = "8484564932:AAHyiPs-lJHH9jQB0KOCIKsXtuZbP_RJ9kw"
 
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 TIMEZONE = "Asia/Bangkok"
@@ -217,3 +217,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
