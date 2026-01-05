@@ -175,7 +175,7 @@ async def show(update: Update, context: ContextTypes.DEFAULT_TYPE):
             dt = datetime.fromisoformat(start_str.replace("Z", "+00:00")).astimezone(BKK)
             display = dt.strftime("📌%d/%m/%Y %H:%M")
         else:
-            display = datetime.fromisoformat(start_str).strftime("%d/%m/%Y")
+            display = datetime.fromisoformat(start_str).strftime("📌%d/%m/%Y")
 
         msg += f"{i}. {display} - {e['summary']}\n"
 
@@ -217,5 +217,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
