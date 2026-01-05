@@ -173,7 +173,7 @@ async def show(update: Update, context: ContextTypes.DEFAULT_TYPE):
         start_str = e["start"].get("dateTime") or e["start"].get("date")
         if "T" in start_str:
             dt = datetime.fromisoformat(start_str.replace("Z", "+00:00")).astimezone(BKK)
-            display = dt.strftime("%d/%m/%Y %H:%M")
+            display = dt.strftime("📌%d/%m/%Y %H:%M")
         else:
             display = datetime.fromisoformat(start_str).strftime("%d/%m/%Y")
 
@@ -217,4 +217,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
